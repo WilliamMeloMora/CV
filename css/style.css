@@ -1,0 +1,969 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;  
+}
+header {
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/fondoPantalla01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;     
+}
+.wave{   /* posicion de la onda */
+  position: absolute;
+  bottom: 0;  
+  width: 100%;
+}
+/* === LOGO DE LAS INICIALES WM === */
+.logowm{
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  background-image: url(../img/WM_log.png);
+  background-size: contain;
+  text-shadow: 0 0 35px #fff; 
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  width: 80px;
+  height: 70px;  
+}
+/* === Fin del logo de las iniciales de wm === */
+
+/* === FONT TIPO MAQUINA DE ESCRIBIR === */
+@font-face {
+  font-family: 'Maquina';
+  src: url('../img/maquina.ttf') format('truetype');
+}
+/* ===  Fin font tipo Maquina de Escribir === */
+
+/* === LETRAS DEL TITULO === */
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  padding-top: 150px; 
+  flex-direction: column;  
+}
+.cvwm{  /* Nombre: C.V. William Melo */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 65px;
+  padding-top: 4px;
+}
+.saludos,  #greeting {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+}
+p.nota{    
+  font-size: 10px;
+}
+.saludos, #greeting, .cvwm, .nota{
+  color:#fff;
+  padding-left: 10%;
+}
+/* === Fin de letras del titulo === */
+
+/* === RELOJ OCULTO === */
+.clock-container {
+	margin-top: 100px;
+}
+#clock {
+	font-size: 1px;
+	margin: 0;
+	padding-left: 10%;
+  color: transparent;
+}
+/* === Fin del reloj oculto === */
+
+/* ==== MAQUINA DE ESCRIBIR =======*/
+.typed {
+  color: rgb(255, 253, 253);
+  }
+  #example {
+    margin: 0;
+    font-family: 'Maquina', sans-serif;
+    font-size: xx-large;
+    padding-left: 10%;
+    padding-top: 2px;
+    color:#fff;
+    }
+/* ==== Fin de Maquina de Escribir ======  */
+
+/* ===== ASCENSOR ==== */
+.ascensor1{
+  position: absolute;
+  background-color: rgb(135, 201, 146);
+  background-image: url(../img/ascensor.png);
+  background-size: cover;
+  border: 2px solid #302f2f;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: fixed;
+  top: 10%;
+  right: 20%;
+  transform: translateY(50%);
+  transform: translateX(50%);
+  width: 60px;
+  height: 60px;   
+  cursor: pointer;  
+  z-index: 1;
+}
+
+.elevator {
+  position: relative;
+  width: 37px;
+  height: 47px;
+  top: 5px;
+  border: 1px solid #080000;
+} 
+.left-door {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #302f2f;
+  background-image: url(../img/man2.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  transform-origin: left center;
+  transition: transform 0.3s ease-out;  
+}
+.right-door {
+  position: absolute;
+  top: 0;
+  left: 19px;
+  width: 50%;
+  height: 100%;
+  background-color: #302f2f;
+  background-image: url(../img/woman2.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  transform-origin: right center;
+  transition: transform 0.3s ease-out;
+}
+.right-door {
+  top: auto;
+  bottom: 0;
+  transform-origin: right center;
+}
+.elevator.open .left-door {
+  transform: scaleX(0);
+}
+.elevator.open .right-door {
+  transform: scaleX(0);
+}
+.ascensor1:hover{
+  box-shadow: 0 0 35px #fff;
+}
+/* ===== FIN DE ASCENSOR ==== */
+
+/* ===== MENU DEL ASCENSOR ==== */
+nav{
+  position: fixed;
+  top: 4%;
+  right: 22%;
+  transform: translateY(50%);
+  transform: translateY(50%);  
+  background: linear-gradient(#a7a0a0, #525050, #1c1c1c);  
+  box-shadow: 0 0 8px #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 99;
+  display: none;
+}
+nav a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;  
+}
+/* ===== Fin del menu del ascensor  ==== */
+
+/* ===== REDES ==== */
+.redes{
+  position: relative;
+  margin: 20px 0;
+  margin: auto; 
+  left: 15%;
+  /* width: auto; */
+}
+.redes a{  
+  font-size: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000000;
+  color: #9601c8;
+  border: 1px solid #9601c8;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 50%;
+  padding:  10px 0 0 20px; /* Abajo a la derecha */
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: .3s; 
+}
+.redes a:hover{
+  color: #fff;
+  background-color: #9601c8;
+  box-shadow: 0 0 20px #fff;
+}
+/* ===== Fin de redes ==== */
+
+/* ===========  SOBRE MI ============= */
+  .fotomia{   
+  background-image: url(../img/fotoWM2.jpg);
+  border: 5px solid #9601c8;  
+  background-size: cover;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  /* left: 25%; */
+  width: 140px;
+  height: 140px;  
+} 
+ .sobremi{   
+  margin-top: 70px;
+  padding-top: 20px;
+}
+.solotitulo{
+  text-align: center;
+  margin-top: 10px;
+}
+.titulo-seccion{  
+  font-family: "Yellowtail";
+  font-size: 1.5rem;  
+  font-style: italic;  
+  color: black;  
+}
+.caracteristicas{
+  font-family: "Titillium Web";
+  font-size: 1.5rem;
+  font: bold;
+  color: #9601c8;
+  text-align: center;
+}
+#logo2{  
+  font-size: 1.5rem;
+  text-align: center;
+  color: #9601c8;  
+  width: 40px;
+  height: 40px;
+  border: 2px solid #9601c8;
+  padding-top: 5px;  
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.perfil{
+  font-family: "Titillium Web";
+  font-weight: 700;
+  color: #9601c8;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.pcentro{
+  text-align: center;
+  font-family: "Titillium Web";
+  font-size: 20px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+div i, div span {
+  display: inline-block;
+}
+.fa-circle-check{
+  margin-left: 10px;
+  font-size: 1.2rem;  
+  margin-bottom: 10px;
+}
+ .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+ }
+ .card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    /* cursor: pointer; */
+  }
+  .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;   
+  }
+  .card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+  }  
+  .card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+  }  
+  .card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+  }  
+  .cardtitulo{
+    text-align: center;
+    margin-bottom: 10px;
+  } 
+  .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #9601c8;    
+    padding: 20px 30px 0 30px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;    
+    text-align: justify;
+    box-shadow: 0 5px 10px #000;
+  }  
+  .card .back .link {
+   
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+  }  
+  .card .back .link a {
+    color: #f3f3f3;
+  }  
+  .card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }  
+  .card .back p {
+    letter-spacing: 1px;
+  }  
+  .card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+  }  
+  .card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+  } /**/ 
+  /* ======== Fin Aserca de Mi ====== */
+
+/* ======== Proyectos ======   */
+.proyectos{
+  background-image: url(../img/fondo3.jpg);
+  background-color: #9601c8;  
+  background-size: cover;
+  height: 800px;
+  margin-top: 150px;
+  padding-top: 0px;
+}
+.contenido {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Titulo */
+.titulobuscar {
+  padding: 10px 0;
+}
+.titulobuscar .logo {
+  text-align: center;	
+}
+.titulobuscar .logo p {
+  color: #9B9B9B;
+}
+.titulobuscar form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.titulobuscar .barra-busqueda {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+.titulobuscar .categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.titulobuscar .categorias a {
+  color: #9601c8;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.titulobuscar .categorias a.activo {
+  color: #000;
+}
+.categorias a:hover {
+  color: #fff;
+}
+
+/* Grid */
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+}  
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(20% - 20px);
+}
+.grid .item-contenido {
+  position: relative;
+}
+.item-contenido11 {
+  border-radius: 10px;
+  height: 140px;
+  width: 140px;
+  cursor: pointer;
+  background-size: cover;
+  box-shadow: 0 5px 10px #000;
+}
+
+.item-contenido11 img{
+  
+  border-radius: 10px;
+}
+/* ============ */
+
+.grid .item img {
+  width: 100%;
+  cursor: pointer;
+  vertical-align: center;
+}
+
+/* ========================= Modal =============== */
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+  position: relative;
+  left: 37%;
+  top: 18%;
+  background-color: purple;  
+  padding: 2px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 400px;
+  height: 400px;
+}
+.fondo2 {
+  margin-bottom: 5px;
+  color:rgb(44, 5, 219);
+  font-size: 18px;
+  text-align: center;
+  background: #e7c1f4;
+  border: 1px solid black;
+  border-radius: 10px 10px 0 0;
+}
+.fondo3 {  
+  width: 392px;
+  height: 300px;
+  background: purple;
+  border: 1px solid black;
+  border-radius: 0 0 10px 10px  ;
+}
+.modal-imagen {
+  width: 100%;
+  height: 100%;
+}
+.close {
+  position: relative;
+  top: 1px;
+  left: 0%;
+  width: 18px;
+  height: 18px;
+  font-size: 13px;   
+  background: red;
+  border-radius: 50px;
+  border: 2px solid white;  
+  color:white;  
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+background: #000;
+border: 2px solid red;
+text-decoration: none;
+cursor: pointer;
+}
+/* ================ fin de  modal =================== */
+
+/* ========= Fin de Proyectos ======== */
+
+/* ===== Contacto PIE DE PAGINA ==== */
+.contacto{
+  background-color:#5c0279;  
+  height: 45%;    
+  padding-top: 0px;    
+}
+.contenedorpie{   
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%; 
+  height: 690px;
+  max-width: 1200px; 
+  padding-top: 0px; 
+  display: flex;
+  margin: auto;
+  display:grid;
+  color: white;
+}
+  
+ /* ===== COLUMNA 1 ===== */
+.columna1 {
+  max-width: 400px;
+   height: 100%;
+   text-align: center;   
+}
+.datperson i{    
+  font-size: 1.5rem;
+  margin-top: 15px;   
+}
+.datperson{    
+  margin-top: 15px;
+  text-align: center;
+}
+.logitowm {
+  height: 150px;
+  width: 150px;
+  background-image: url(../img/WM_log.png);   
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 30%;
+  margin-top: 5%;    
+}
+/* === fin Columna 1 === */
+  
+/* ===== COLUMNA 2 ===== */
+.columna2{
+  padding-top: 80px;
+  padding-left: 20px;
+  max-width: 400px;    
+  text-align: left;
+}
+.columna2 h2{   
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+.redes3{
+  display: flex;
+  position: relative;
+  width: 350px;
+  height: 40px;
+  margin-top: 20px;    
+}
+.redes3 a{
+  color: white;
+  margin-left: 15px;
+  padding-top: 12px;
+  text-decoration: none;
+}
+.linea1 a{
+  font-size: 1.2rem;
+  display: flex;
+  text-decoration: none;
+  background-color: #000000;
+  color: #9601c8;
+  border: 1px solid #9601c8;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 5px;
+  padding:  15px 0px 0px 15px; /* Abajo a la derecha */
+  width: 40px;
+  height: 40px;    
+}
+.linea1 a:hover{
+  color: #fff;
+  background-color: #9601c8;
+  box-shadow: 0 0 20px #fff;
+}
+/* === fin Columna 2 === */
+
+/* ===== COLUMNA 3 ===== */
+.mapacasa{
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/madridmap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.columna3{
+  padding-top: 150px;
+  max-width: 400px;    
+  text-align: center;
+} 
+
+/* === fin Columna 3 === */
+.piefondo{
+margin-top: 70px;
+}
+.lineapie { 
+background-color: #080005;
+padding: 15px 10px;  
+text-align: center;
+color: #fff;
+font-size: 20px;
+} 
+
+/* ===== fin Pie de pagina ==== */
+ @media (max-width: 480px) {
+  .logowm{    
+    top: 3%;
+    left: 13%;
+    width: 70px;
+    height: 60px;  
+  }
+  p.nota{  
+      font-size: 15px;
+  }
+   .cvwm{  
+    font-size: 35px;
+    padding-top: 4px;
+   } 
+   .saludos,  #greeting {  
+    font-size: 30px;
+  } 
+   .nota{  
+    font-size: 10px;
+  } 
+   #example {
+    font-size: medium;
+    }
+   .ascensor1{
+    top: 5%;
+  } 
+   nav{
+    right: 28%;
+    top: 2%;
+  } 
+  .redes{    
+    left: 0%;
+  }
+   .redes a{
+    font-size: 1rem;
+    padding:  5px 0 0 15px;
+    width: 40px;
+    height: 40px;
+  }  
+   .fotomia{ 
+    border: 3px solid #9601c8;
+    width: 100px;
+    height: 100px; 
+  }
+  #logo2{  
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #9601c8;
+    padding-top: 5px;  
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+  .card {
+    margin-top: 80px;
+  }
+  .card .back p {
+    font-size: medium;
+  } 
+  .card .back ul {
+    font-size: medium;
+  } 
+  .cardtitulo{
+    margin-bottom: 1px;
+  }
+  .proyectos{
+    margin-top: 100px;
+    height: auto;
+  }
+  .grid {  
+    margin: auto;
+    display: flex;  
+    width: auto;
+    height: auto;  
+  }
+  .grid .item{  
+    margin: 28px;
+  }
+  .item-contenido11 {  
+    height: 75px;
+    width: 75px;
+    margin-right: 0px;  
+    box-shadow: 0 2px 5px #000;  
+  }
+  .modal-content {  
+    left: 11%;  
+    top: 15%; 
+    padding: 5px;  
+    width: 250px;
+    height: 400px;
+  }
+  .fondo3 {  
+    width: 240px;
+    height: 280px;  
+  }
+  .contenedorpie{   
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;     
+  }
+  .logitowm {
+    height: 100px;
+    width: 100px;  
+    margin: auto;    
+  }
+  .contacto{
+    background-color:#5c0279;  
+    height: 85%;    
+    padding-top: 0px;    
+  }
+  .piefondo{  
+    margin-top: 1000px;
+    }
+  
+  .columna1 {  
+     height: auto;   
+  }
+  .columna2 { 
+     height: auto;
+  }
+  .redes3{  
+    width: 230px;  
+  }
+  .redes3 a{
+   
+    margin-left: 5px;
+    
+  }
+  .mapacasa{
+    height: 300px;
+    width: 300px;
+  }
+  } 
+
+   @media (min-width: 481px) and (max-width: 768px) {
+.logowm{    
+    top: 3%;
+    left: 13%;
+    width: 70px;
+    height: 60px;  
+  }
+  p.nota{  
+      font-size: 15px;
+  }
+   .cvwm{  
+    font-size: 35px;
+    padding-top: 4px;
+   } 
+   .saludos,  #greeting {  
+    font-size: 30px;
+  } 
+   .nota{  
+    font-size: 10px;
+  } 
+   #example {
+    font-size: medium;
+    }
+   .ascensor1{
+    top: 5%;
+  } 
+   nav{
+    right: 28%;
+    top: 2%;
+  } 
+  .redes{    
+    left: 0%;
+  }
+   .redes a{
+    font-size: 1rem;
+    padding:  5px 0 0 15px;
+    width: 40px;
+    height: 40px;
+  }  
+   .fotomia{ 
+    border: 3px solid #9601c8;
+    width: 100px;
+    height: 100px; 
+  }
+  #logo2{  
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #9601c8;
+    padding-top: 5px;  
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+  .card {
+    margin-top: 80px;
+  }
+  .card .back p {
+    font-size: medium;
+  } 
+  .card .back ul {
+    font-size: medium;
+  } 
+  .cardtitulo{
+    margin-bottom: 1px;
+  }
+  .proyectos{
+    margin-top: 100px;
+    height: auto;
+  }
+  .grid {  
+    margin: auto;
+    display: flex;  
+    width: auto;
+    height: auto;  
+  }
+  .grid .item{  
+    margin: 28px;
+  }
+  .item-contenido11 {  
+    height: 75px;
+    width: 75px;
+    margin-right: 0px;  
+    box-shadow: 0 2px 5px #000;  
+  }
+  .modal-content {  
+    left: 11%;  
+    top: 15%; 
+    padding: 5px;  
+    width: 250px;
+    height: 400px;
+  }
+  .fondo3 {  
+    width: 240px;
+    height: 280px;  
+  }
+  .contenedorpie{   
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;     
+  }
+  .logitowm {
+    height: 100px;
+    width: 100px;  
+    margin: auto;    
+  }
+  .contacto{
+    background-color:#5c0279;  
+    height: 85%;    
+    padding-top: 0px;    
+  }
+  .piefondo{  
+    margin-top: 1000px;
+    }
+  
+  .columna1 {  
+     height: auto;   
+  }
+  .columna2 { 
+     height: auto;
+  }
+  .redes3{  
+    width: 230px;  
+  }
+  .redes3 a{
+   
+    margin-left: 5px;
+    
+  }
+  .mapacasa{
+    height: 300px;
+    width: 300px;
+  }
+
+  } 
+
+  @media (min-width: 769px) {
+    .contenedorpie{   
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;     
+    }
+    .logitowm {
+      height: 100px;
+      width: 100px;  
+      margin: auto;    
+    }
+    
+    .piefondo{  
+     
+      margin-top: auto;
+      }
+    
+    .columna1 {  
+       height: auto;   
+    }
+    .columna2 { 
+       height: auto;
+    }
+    .redes3{  
+      width: 230px;  
+    }
+    .redes3 a{
+     
+      margin-left: 5px;
+      
+    }
+    
+  }
+
+  

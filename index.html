@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/LibIcoNew.png" />
+    <title>CV William Melo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- INICIO  DE LA PAGINA-->
+    <section class="inicio" id="inicio">
+      <header class="header">
+        <div class="logowm"></div>
+        <div id="nav2" class="nav2">
+          <div class="ascensor1" onclick="mostrarOcultarMenu()" title="M e n u">
+            <div class="elevator">
+              <div class="doors">
+                <div class="left-door"></div>
+                <div class="right-door"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="menu2" onclick="mostrarOcultarMenu()" title="M e n u">Menu</div> -->
+        </div>
+        <nav id="nav" class="nav">
+          <a href="#inicio">1.Titulo</a>
+          <a href="#sobremi">2.Sobre mí</a>
+          <a href="#proyectos">3.Proyectos</a>
+          <a href="#contacto">4.Contacto</a>
+        </nav>
+        <section class="textos-header">
+          <h1 class="saludos">Hola,</h1>
+          <h1 id="clock"></h1>
+          <p id="greeting"></p>
+          <p class="nota">(descuida cambia según la hora)</p>
+          <p class="cvwm">C.V. William Melo</p>
+          <h1 id="example"></h1>
+          <div class="redes">
+            <a href="https://www.linkedin.com/" title="Linkedin" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://twitter.com/" title="Twitter" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="mailto:williammelomora@gmail.com"
+              title="williammelomora@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="cv_wm.pdf" title="Descargar Curriculum"
+              ><i class="fa-solid fa-file-arrow-down"></i
+            ></a>
+
+            <a href="https://youtube.com/" title="YouTube" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://github.com/" title="GitHub" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </section>
+
+        <!-- Efecto onda en la cabecera -->
+        <div class="wave" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #fff"
+            ></path>
+          </svg>
+        </div>
+        <!-- Fin efecto onda en la cabecera -->
+      </header>
+    </section>
+    <!-- FINAL DE INICIO DE LA PAGINA -->
+
+    <!-- SECCION SOBRE MI -->
+  <section class="sobremi" id="sobremi">  
+    <div class="contenido-seccion"> 
+      <div class="fotomia"></div>   
+      <div class="solotitulo">  
+      <span class="titulo-seccion">Sobre Mi...</span>
+      </div>
+        <h3 class="caracteristicas">CARACTERISTICAS PERSONALES:</h3>  
+  
+        <!-- _____ Tarjetas________ -->        
+      <div class="tarjetas">
+        <!-- ===== Tarjeta Madrid ===== -->
+        <div class="card">
+          <div class="perfil">
+          <i class="fa-solid fa-user" id="logo2"></i>
+          <span class="titulo-detalle">Perfil</span>
+          </div>
+          <div class="face front">
+            <img src="img/img1.jpg" alt="">          
+          </div>
+          <div class="face back">
+            <h2 class="cardtitulo">Acerca de mi:</h2>
+            <p> - Soy un profesional de nacionalidad española, con buena experiencia en electrónica, informática y desarrollo web. (ver mis proyectos). </p>
+            <p> - Conocimiento en Sistemas Operativos Windows, Redes, Hardware y Software. </p>
+            <p> - Conocimiento en Lenguajes de Programación  y Bases de Datos.</p>
+            <p> - Conocimientos en reparaciones de equipos y tarjetas electrónicas. soldadura, lectura de planos electrónicos.
+            </p>
+            <p class="cardmadrid"> - Ultimos trabajos realizados: Por favor descargar mi Curriculum Vitae (en PDF).
+            </p>            
+            <div class="link">
+              <h2 class="cardtitulo">WM</h2>              
+            </div>
+          </div>
+        </div>
+              <!-- ======= Tarjeta Barcelona ==== -->
+        <div class="card">
+          <div class="perfil">
+          <i class="fa-solid fa-location-pin" id="logo2"></i>
+                <span class="titulo-detalle">Ubicación</span>
+              </div>
+          <div class="face front">
+            <img src="img/img2.jpg" alt="">            
+          </div>
+          <div class="face back">
+            <h2 class="cardtitulo">Ubicación:</h2>
+            <p>- Lugar de residencia:</p>          
+            <p class="pcentro"> Madrid, ESPAÑA </p> 
+            <p>- Si tienes disponibilidad para viajar, y estás dispuesto a viajar por trabajo, dentro o fuera del país:</p>
+            <p class="pcentro">SI</p>
+            <p>- Si el trabajo requiere viajar frecuentemente: </p>
+            <p class="pcentro">SI</p>
+            <p>- Si estás dispuesto a reubicarte, si estás dispuesto a mudarte a otra ciudad o país para el trabajo: </p>
+            <p class="pcentro">SI</p>
+            <div class="vacio"></div>
+            <div class="link">
+              <h2 class="cardtitulo">WM</h2>              
+            </div>
+          </div>
+        </div>
+              <!-- ===== Tarjeta Sevilla ====       -->
+        <div class="card">
+          <div class="perfil">
+          <i class="fa-solid fa-flag" id="logo2"></i>
+                <span class="titulo-detalle">Intereses</span>
+              </div>
+          <div class="face front">
+            <img src="img/img3.jpg" alt="">            
+          </div>
+          <div class="face back">
+            <h2 class="cardtitulo">Intereses:</h2>
+            <ul>
+              <li>Trabajo en equipo <i class="fa-solid fa-circle-check"></i></li>
+              <li>Proactivo <i class="fa-solid fa-circle-check"></i></li>
+              <li>Trabajo bajo presión <i class="fa-solid fa-circle-check"></i></li>
+              <li>Trabajo con clientes directo <i class="fa-solid fa-circle-check"></i></li>
+              <li>Trabajo con clientes indirectamente <i class="fa-solid fa-circle-check"></i></li>
+              <li>Disponible para aprender y enseñar <i class="fa-solid fa-circle-check"></i></li>
+              <li>Empatía <i class="fa-solid fa-circle-check"></i></li>
+              <li>Organizado <i class="fa-solid fa-circle-check"></i></li>
+              <li>Respecto y cordura ante el cliente <i class="fa-solid fa-circle-check"></i></li>
+              <li>Puntualidad <i class="fa-solid fa-circle-check"></i></li>
+            </ul>          
+            <div class="vacio"></div>
+            <div class="link">
+            <h2 class="cardtitulo">WM</h2>          
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- ==== Proyectos ====    -->
+<section class="proyectos" id="proyectos">
+  <div class="contenido">
+    <div class="titulobuscar">
+      <div class="logo">				
+        <h3 class="caracteristicas">PROYECTOS:</h3>				
+			</div>
+      <form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Informática</a>
+				<a href="#">Ecommerce</a>
+				<a href="#">Programación</a>
+        <a href="#">Electrónica y <br>&nbsp;&nbsp;Electricidad</a>
+        <a href="#">Proyectos</a>
+			</div>
+    </div>
+    <section class="grid" id="grid">
+      <!-- == Boton 1 == -->
+			<div class="item" 
+				 data-categoria="informática"
+				 data-etiquetas="word excel outlook informática Informática">
+         <div class="item-contenido11">        
+          <div class="grid-item" title="Microsoft 365">
+            <img src="/img/Proyects/microsoft365.png" onclick="mostrarModal(1)">
+          </div>
+        </div>
+			</div>
+
+      <!-- == Boton 2 == -->
+			<div class="item" 
+        data-categoria="microsoft 365"
+        data-etiquetas="word excel outlook microsoft 365">
+        <div class="item-contenido11">        
+          <div class="grid-item" title="2">
+         <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 3 == -->
+      <div class="item" 
+        data-categoria="electrónica"
+        data-etiquetas="Electrónica electrónica">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados Digitales2" title="3">
+          <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 4 == -->
+      <div class="item" 
+        data-categoria="microsoft 365"
+        data-etiquetas="ciudades autos carros microsoft 365">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados Digitales2" title="4">
+          <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 5 == -->
+      <div class="item" 
+        data-categoria="programación"
+        data-etiquetas="Programación programación">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados Digitales2" title="5">
+          <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 6 == -->
+      <div class="item" 
+        data-categoria="programación"
+        data-etiquetas="Programación programación">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados Digitales2" title="6">
+          <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 7 == -->
+      <div class="item" 
+        data-categoria="ecommerce"
+        data-etiquetas="Ecommerce ecommerce">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados Digitales7" title="7">
+          <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 8 == -->
+      <div class="item" 
+        data-categoria="ecommerce"
+        data-etiquetas="Ecommerce ecommerce">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados Digitales8" title="8">
+          <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 9 == -->
+        <div class="item" 
+        data-categoria="ecommerce"
+        data-etiquetas="Ecommerce ecommerce">
+          <div class="item-contenido11">        
+            <div class="grid-item" id="imagen Certificados  Digitales9" title="9">
+            <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+            </div>
+          </div>
+        </div>
+
+      <!-- == Boton 10 == -->
+        <div class="item" 
+        data-categoria="ecommerce"
+        data-etiquetas="Ecommerce ecommerce">
+          <div class="item-contenido11">        
+            <div class="grid-item" id="imagen Certificados  Digitales10" title="10">
+            <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+            </div>
+          </div>
+        </div>
+
+      <!-- == Boton 11 == -->
+		  	<div class="item" 
+        data-categoria="electrónica"
+        data-etiquetas="Electrónica electrónica">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados  Digitales11" title="11">
+         <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 12 == -->
+		  	<div class="item" 
+        data-categoria="proyectos"
+        data-etiquetas="Electrónica electrónica ">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados  Digitales12" title="12">
+         <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 13 == -->
+		  	<div class="item" 
+        data-categoria="proyectos"
+        data-etiquetas="Proyectos proyectos">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados  Digitales13" title="13">
+         <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 14 == -->
+		  	<div class="item" 
+        data-categoria="proyectos"
+        data-etiquetas="Proyectos proyectos">
+        <div class="item-contenido11">        
+          <div class="grid-item" id="imagen Certificados  Digitales14" title="14">
+         <img src="/img/Proyects/construccion.png" onclick="mostrarModal(2)">
+          </div>
+        </div>
+      </div>
+
+      <!-- == Boton 15 == -->
+		  	<div class="item" 
+        data-categoria="proyectos"
+        data-etiquetas="Proyectos proyectos">
+        <div class="item-contenido11">        
+          <div class="grid-item2" id="imagen Certificados  Digitales15" title="15 Supermercados">        
+         <img src="/img/Proyects/supermercado.png" onclick="mostrarModal(1)">
+          </div>
+        </div>
+      </div>
+		</section>
+  </div>
+
+  <!-- ==== Modal==== -->  
+  <div class="modal" id="modal">
+		<div class="modal-content">
+      <div class="fondo2">
+      <span class="close" title="Salir">X</span>
+      <p>Contenido Educativo, Proyectos y Soporte Técnico.</p>
+	  <div class="modal-titulo" id="modal-titulo"></div>
+			<div class="modal-enlace" id="modal-enlace"></div>
+      </div>
+			<div class="fondo3">
+      <img class="modal-imagen" id="modal-imagen">		
+      </div>
+		</div> 
+	</div>  
+</section>
+<!-- ====== Fin de Proyectos ===== -->
+
+<!-- ======== Contacto PIE DE PAGINA ======== -->
+<section class="contacto" id="contacto">
+  <!--=== Redes === -->
+  <footer>
+    <div class="contenedorpie">
+      <div class="columna1"> 
+        <div class="logitowm">
+        </div>
+        <div class="datosp">
+        <h2>Datos Personales:</h2>
+        <!-- ===== Para probar de la columna 1 === -->
+        <div class="datperson">
+          <div class="address">
+            <i class="fas fa-map-marker-alt"></i>          
+            <div class="topic">Direccion:</div>
+            <div class="text-one">Calle de la Hacienda de Pavones, 50</div>
+            <div class="text-two">28030, Madrid</div>
+          </div>
+          <div class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="topic">Whatsapp:</div>
+            <div class="text-one">+34 637 094 686</div>       
+          </div>
+          <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Telefono:</div>
+            <div class="text-one">+34 637 094 686</div>         
+          </div>
+          <div class="email">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email:</div>
+            <div class="text-one">pantoncolor2021@gmail.com</div>
+            <div class="text-two">williammelomora@gmail.com</div>
+          </div>
+        </div> 
+        </div>
+      </div>
+      <div class="columna2">
+        <h2>Redes Sociales:</h2>
+        <div class="redes3">
+          <div class="linea1">
+            <a href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <a href="https://www.linkedin.com/" title="Linkedin" target="_blank">Sigueme en Linkedin.com</a>        
+        </div>
+        <div class="redes3">
+          <div class="linea1">
+            <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="https://twitter.com/" title="Twitter" target="_blank">Sigueme en Twitter.com</a>
+        </div>
+        <div class="redes3">
+          <div class="linea1">
+            <a href="mailto:williammelomora@gmail.com" title="williammelomora@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <a href="mailto:williammelomora@gmail.com" title="williammelomora@gmail.com">Enviame un Email</a>
+        </div>
+        <div class="redes3">
+          <div class="linea1">
+            <a href="cv_wm.pdf" title="Descargar Curriculum"><i class="fa-solid fa-file-arrow-down"></i></a>
+          </div>
+          <a href="cv_wm.pdf" title="Descargar Curriculum">Descargar Curriculum </a>
+        </div>
+        <div class="redes3">
+          <div class="linea1">
+            <a href="https://youtube.com/" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="https://youtube.com/" title="YouTube" target="_blank">Sigueme en YouTube.com</a>
+        </div>
+        <div class="redes3">
+          <div class="linea1">
+            <a href="https://github.com/" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="https://github.com/" title="GitHub" target="_blank">Sigueme en GitHub.com</a>
+        </div>
+      </div>
+      <div class="columna3">
+        <h2>Mapa:</h2>
+        <div class="mapacasa">
+        </div>
+      </div>
+    </div>
+    <!-- ==== Fin de redes === -->
+  
+    <div class="piefondo">
+      <div class="lineapie">
+          <small>&copy; 2023 <b>William Melo Mora</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </div>
+  </footer>
+  </section>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="js/Typewriter.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
