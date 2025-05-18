@@ -156,7 +156,7 @@ function mostrarModal(numero) {
 	} else if (numero === 3) {
 		modalImagen.src = "/img/proyects/mercado_titulo.png";
 		modalTitulo.innerHTML = "Microsoft 365";
-		modalEnlace.innerHTML = "<a href='pagina3.html'>E N T R A R</a>";
+		modalEnlace.innerHTML = "<a href='proyecto1/index.html'>E N T R A R</a>";
 	} else if (numero === 4) {
 		modalImagen.src = "modal4.jpg";
 		modalTitulo.innerHTML = "Modal 4";
