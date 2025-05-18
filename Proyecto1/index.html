@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pronunciación en Inglés</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>🎧 Practica tu pronunciación</h1>
+
+    <div class="config">
+      <label for="cantidad">Cantidad de preguntas:</label>
+      <select id="cantidad">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+
+      <label for="tiempo">Tiempo para responder (s):</label>
+      <select id="tiempo">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Comenzar</button>
+      <button id="pauseBtn">Pausar</button>
+      <button id="endBtn">Finalizar</button>
+      <button id="resetBtn">Reiniciar</button>
+      <button id="repetirBtn">Repetir</button>
+    </div>
+
+    <div id="palabraActual"></div>
+    <div id="resultado"></div>
+
+    <div class="barra-container">
+      <div id="barra" class="barra"></div>
+    </div>
+    <div id="puntaje"></div>
+    <div id="historial"></div>
+
+    <audio id="campana" src="media/bell.mp3" preload="auto"></audio>
+
+    <script src="palabras.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
