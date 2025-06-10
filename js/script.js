@@ -146,21 +146,25 @@ function mostrarModal(numero) {
 	modal.style.display = "flex";
 	
 	if (numero === 1) {
-		modalImagen.src = "/img/proyects/microsoft365_3.png";
-		modalTitulo.innerHTML = "Microsoft 365";
-		modalEnlace.innerHTML = "<a href='/proyectos/informatica/proyecto1/microsoft365.html' target='_blank'>E N T R A R</a>";
+		modalImagen.src = "img/Informatica.jpg";
+		modalTitulo.innerHTML = "I N F O R M A T I C A";
+		modalEnlace.innerHTML = "<a href='main2.html' target='_blank'>E N T R A R</a>";
 	} else if (numero === 2) {
-		modalImagen.src = "/img/proyects/microsoft365.png";
-		modalTitulo.innerHTML = "Proyecto";
-		modalEnlace.innerHTML = "<a href='proyecto1/index.html'>E N T R A R</a>";
+		modalImagen.src = "img/ecommerce.jpg";
+		modalTitulo.innerHTML = "E - C O M M E R C E";
+		modalEnlace.innerHTML = "<a href='main2.html' target='_blank'>E N T R A R</a>";
 	} else if (numero === 3) {
-		modalImagen.src = "/img/proyects/mercado_titulo.png";
-		modalTitulo.innerHTML = "Microsoft 365";
-		modalEnlace.innerHTML = "<a href='proyecto1/index.html'>E N T R A R</a>";
+		modalImagen.src = "img/programacion.jpg";
+		modalTitulo.innerHTML = "P R O G R A M A C I O N";
+		modalEnlace.innerHTML = "<a href='main2.html' target='_blank'>E N T R A R</a>";
 	} else if (numero === 4) {
-		modalImagen.src = "modal4.jpg";
-		modalTitulo.innerHTML = "Modal 4";
-		modalEnlace.innerHTML = "<a href='pagina4.html'>Ir a página 4</a>";
+		modalImagen.src = "img/electronica.jpg";
+		modalTitulo.innerHTML = "E L E C T R O N I C A";
+		modalEnlace.innerHTML = "<a href='main2.html' target='_blank'>E N T R A R</a>";
+	} else if (numero === 5) {
+		modalImagen.src = "img/proyectos.jpg";
+		modalTitulo.innerHTML = "P R O Y E C T O S";
+		modalEnlace.innerHTML = "<a href='main2.html' target='_blank'>E N T R A R</a>";
 	}
 }
 

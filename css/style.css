@@ -461,15 +461,20 @@ div i, div span {
 }
 
 .item-contenido11 img{
+  padding-left: -2px;
+  padding-top: -1px;
+  border-radius: 20px;
   
-  border-radius: 10px;
 }
 /* ============ */
 
 .grid .item img {
-  width: 100%;
+  width: 102%;
+  border-radius: 20px;
   cursor: pointer;
   vertical-align: center;
+  
+  
 }
 
 /* ========================= Modal =============== */
