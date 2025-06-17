@@ -44,6 +44,23 @@ header {
 }
 /* ===  Fin font tipo Maquina de Escribir === */
 
+/* CONTADOR */
+.contador-visitas {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 16px;
+  color: #333;
+}
+
+.contador-visitas i {
+  margin-right: 8px;
+  color: #007BFF;
+}
+
+
 /* === LETRAS DEL TITULO === */
 header .textos-header{
   display: flex;
