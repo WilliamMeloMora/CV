@@ -483,5 +483,18 @@
     <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="js/Typewriter.js"></script>
     <script src="js/script.js"></script>
+    <script>
+  const contadorAPI = 'https://script.google.com/macros/s/AKfycbwt7lEBi-mHXmegV7L-aCaxQVN1_-BEix54OmVrjnE6gXiGkguWbvbH284caebr7C3U/exec';
+
+  fetch(contadorAPI)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('contador').innerText = data.visitas;
+    })
+    .catch(error => {
+      console.error('Error al obtener el contador:', error);
+    });
+</script>	  
+	
   </body>
 </html>
