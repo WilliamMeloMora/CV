@@ -486,7 +486,13 @@
     <script>
   const contadorAPI = 'https://script.google.com/macros/s/AKfycbwt7lEBi-mHXmegV7L-aCaxQVN1_-BEix54OmVrjnE6gXiGkguWbvbH284caebr7C3U/exec';
 
-  fetch(contadorAPI)
+  // Capturar los datos del navegador
+  const navegador = navigator.userAgent;
+  const idioma = navigator.language || navigator.userLanguage;
+  const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+  // Llamar a la API enviando los parámetros
+  fetch(`${contadorAPI}?navegador=${encodeURIComponent(navegador)}&idioma=${encodeURIComponent(idioma)}&zonaHoraria=${encodeURIComponent(zonaHoraria)}`)
     .then(response => response.json())
     .then(data => {
       document.getElementById('contador').innerText = data.visitas;
